@@ -1,4 +1,0 @@
-index.html        (Početna)
-usluge.html       (Naše usluge)
-kontakt.html      (Kontakt)
-style.css         (Zajednički premium stil)
