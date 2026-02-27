@@ -1,0 +1,211 @@
+
+:root {
+  --deep-blue: #0b1f35;
+  --steel-blue: #1f3b5c;
+  --silver: #cfd6df;
+  --light-silver: #f4f6f9;
+  --accent: #2f5d8a;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--light-silver);
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(90deg, var(--deep-blue), var(--steel-blue));
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(6px);
+}
+
+nav img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: var(--silver);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+/* HERO */
+
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(11,31,53,0.85), rgba(11,31,53,0.85)),
+              url('office.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero p {
+  font-size: 20px;
+  opacity: 0.9;
+  animation: fadeUp 1.4s ease forwards;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--silver), var(--white));
+  color: var(--deep-blue);
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+  animation: fadeUp 1.8s ease forwards;
+}
+
+.btn:hover {
+  background: var(--white);
+  transform: translateY(-2px);
+}
+
+/* SECTION */
+
+section {
+  padding: 80px 10%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+  color: var(--deep-blue);
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--white);
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: 0.35s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* ADV SECTION */
+
+.adv-section {
+  background: linear-gradient(rgba(11,31,53,0.9), rgba(11,31,53,0.9)),
+              url('law.jpg') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+}
+
+/* CONTACT */
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+form textarea {
+  height: 120px;
+}
+
+button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 6px;
+  background: var(--steel-blue);
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+footer {
+  background: var(--deep-blue);
+  color: var(--silver);
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+}
