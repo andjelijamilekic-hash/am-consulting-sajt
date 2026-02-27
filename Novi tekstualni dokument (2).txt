@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AM CONSULTING | Premium Finansijske Konsultacije</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<img src="logo.png" alt="AM Consulting Logo">
+<ul>
+<li><a href="index.html">Početna</a></li>
+<li><a href="usluge.html">Usluge</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<div>
+<h1>Poreske i finansijske konsultacije</h1>
+<p>15+ godina iskustva u finansijskim institucijama i pravosuđu</p>
+<a href="kontakt.html" class="btn">Kontaktirajte nas</a>
+</div>
+</div>
+
+<section>
+<h2 class="section-title">O nama</h2>
+<div class="grid">
+<div class="card">
+<h3>Iskustvo</h3>
+<p>Više od 15 godina rada u finansijskim institucijama i pravosuđu.</p>
+</div>
+<div class="card">
+<h3>Stručnost</h3>
+<p>Precizne finansijske analize i poresko savetovanje.</p>
+</div>
+<div class="card">
+<h3>Diskrecija</h3>
+<p>Profesionalan pristup i potpuna poslovna pouzdanost.</p>
+</div>
+</div>
+</section>
+
+<footer>
+AM CONSULTING © 2026
+</footer>
+
+</body>
+</html>
